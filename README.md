@@ -1,5 +1,8 @@
 # Hackathon 2: Team Wonder Woman
 
-![Logo](Images/Logo.png)
 
+
+
+
+<img align="center"  src="Images/Logo.png">
 
