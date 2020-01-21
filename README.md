@@ -1,5 +1,5 @@
 # Hackathon 2: Team Wonder Woman
 
 
-(Image/Logo.png)
+(Images/Logo.png)
 
