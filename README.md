@@ -85,7 +85,7 @@ git clone https://github.com/luisnose/Data_project2.git
 
 * Open Web Browser and go to  http://console.cloud.google.com/
 
-* Create a new project called hackathon and move to it. 
+* Create a new project called as wanted and move to it. "Important to remenber the name of the Project" **Write it down**
 <img src="./Images/CreateProject.png" width="75%"><br/>
 
 * Go to pub/sub on left panel and create topic calling it valenbisi.
