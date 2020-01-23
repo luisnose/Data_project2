@@ -368,7 +368,7 @@ Project ID
 GCP Credentials Provider Service
 Topic Name 
 
-<img src="./Images/processor.png" width="75%"><br/>
+<img src="./Images/Processor.png" width="75%"><br/>
 
 
 The process in the middle of each Goup is normally a split json(Except for the Twitter API that will be explain later), taking in consideration that each API give us a complete json with the different points in the city as follow:
