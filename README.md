@@ -83,10 +83,6 @@ cd New_Project
 git clone https://github.com/luisnose/Data_project2.git
 ```
 
-We are  going to use already provided ElasticStreaming Virtual Machine, but we need to configure it to use 6GB of RAM. 
-
-* Start virtual machine and logon. 
-
 * Open Web Browser and go to  http://console.cloud.google.com/
 
 * Create a new project called hackathon and move to it. 
