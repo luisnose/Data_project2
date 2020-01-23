@@ -136,12 +136,12 @@ export GOOGLE_APPLICATION_CREDENTIALS=/home/edem/Credentials/mobilityApp.json
 mobilityApp.json_ -> s the name of the credential that will require NIFI
 
 
-<img src="./Images/Good_practice.png" width="10%"><br/>
+<img src="./Images/GoodWork.jpg" width="25%"><br/>
 In this point we have successfully created one topic name __”Valenbisi”__, this topic will receive the data coming from Apache NIFI(In this case a Json file) and the subscription __”Streaming”__ is the responsible for delivering the data, through a given script in Apache Beam, that we will discuss later in this brief.
 
 Taking in consideration that in this exercise we are going to receive information from 6 different APIs. In total 6 different topics were created with the respective subscriptions as follow:
 
-<img src="./Images/pub_sub.png" width="100%"><br/>
+<img src="./Images/pub_sub.png" width="70%"><br/>
 
 **Carefull** \
 Remember each _subscription_ belong to a _topic_ in later on, each one is going to be related to a specific NIFI and BEAM process 
