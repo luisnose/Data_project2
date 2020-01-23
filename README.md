@@ -65,7 +65,7 @@ The following exercise will be performance in the follow environment:
 * Nifi          --version 1.9.2
 * Google Cloud (Pub/Sub)
 
-## To follow this exercise, after creating the needed environment in linux, the first step is downloading the coding to you machines:
+## To follow this exercise, after creating the needed environment in linux, the first step is downloading the coding to your machine:
 
 We are going to use already provided ElasticStreaming Virtual Machine, but we need to configure it with a minimum of  6GB of RAM. 
 
