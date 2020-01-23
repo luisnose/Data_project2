@@ -295,9 +295,9 @@ PUT twitter_index
 
 * Setup the Dashboards. Go to Management / Kibana (saved objects) / Import 
 ```
-/home/edem/.../kibana/export.ndjson
+/home/edem/Data_project2/kibana/export.ndjson
 ```  
-
+<img src="./Images/importkibana.png" width="100%"><br/>
 Now Kibana is Setup
 
 <img src="./Images/GoodWork.jpg" width="25%"><br/>
@@ -424,10 +424,18 @@ Topic Name
 
 Now NIFI is Setup
 
-<img src="./Images/GoodWork.jpg" width="25%"><br/>
+<img src="./Images/GoodWork.jpg" width="10%"><br/>
 
 
+<img src="./Images/Recap.png" width="50%"><br/>
 
+
+This is our data architectures again:
+
+![NEW](Images/Architecture2.png)
+
+
+from the finish line to the start->
 
 
 
