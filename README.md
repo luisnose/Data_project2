@@ -450,7 +450,7 @@ So Finally Start the every NIFI processor group, check there are not error.
 
 Check in python, now json should be printing in the console, as follow:
 
-<img src="./Images/playbeam.png" width="50%"><br/>
+<img src="./Images/Playbeam.png" width="50%"><br/>
 
 
 finally check the the dashboard Estado Trafico in kibana 
