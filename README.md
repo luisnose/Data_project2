@@ -423,7 +423,7 @@ Now NIFI is Setup
 <img src="./Images/GoodWork.jpg" width="10%"><br/>
 
 
-<img src="./Images/Recap.png" width="50%"><br/>
+<img src="./Images/recap.png" width="25%"><br/>
 
 
 This is our data architectures again:
@@ -431,10 +431,32 @@ This is our data architectures again:
 ![NEW](Images/Architecture2.png)
 
 
-from the finish line to the start->
+In order to understand every setup done:
+
+
+1.	The APIs deliver a json every 3 min. that are been pull with the InvokeHTTP in Apache Nifi.
+2.	Inside NIFI the big json become smaller json for each different point.
+3.	The last processor in NIFI send the Smaller Json to each topic created in the google cloud Pub/Sub.
+4.	The Data its storage temporally in Pub /Sub until Apache Beam scripts pull it.
+5.	The Script in python format each json file and send the data to be storage in elasticsearch.
+6.	Kibana read the information storage in elasticsearch and display it in the different dashboards. 
 
 
 
- * Finally launch the workflow. 
 
-* Go to Kibana dashboard and see that you see it updated on real time. 
+So Finally Start the every NIFI processor group, check there are not error.
+
+![NEW](Images/playnifi.png)
+
+Check in python, now json should be printing in the console, as follow:
+![NEW](Images/playbeam.png)
+
+finally check the the dashboard Estado Trafico in kibana 
+
+![NEW](Images/playkibana.png)
+
+check the other pre load dashboards.
+
+
+And Enjoy.
+
