@@ -300,7 +300,7 @@ PUT twitter_index
 
 Now Kibana is Setup
 
-<img src="./Images/Good_practice.png" width="10%"><br/>
+<img src="./Images/Good_practice.png" width="100%"><br/>
 
 * Launch Apache Nifi:
 	* Launch Nifi application
@@ -377,7 +377,7 @@ Topic Name
 
 Now NIFI is Setup
 
-<img src="./Images/Good_practice.png" width="10%"><br/>
+<img src="./Images/Good_practice.png" width="25%"><br/>
 
 
 The load configuration is set to filter for “ Valencia, patinete”. Those values can be change in any time to search for any keyword.
