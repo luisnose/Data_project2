@@ -141,7 +141,7 @@ In this point we have successfully created one topic name __”Valenbisi”__, t
 
 Taking in consideration that in this exercise we are going to receive information from 6 different APIs. In total 6 different topics were created with the respective subscriptions as follow:
 
-![terminal](Images/pub_sub.jpg)
+![terminal](Images/Pub_Sub.png)
 
 **Carefull** \
 Remember each _subscription_ belong to a _topic_ in later on, each one is going to be related to a specific NIFI and BEAM process 
