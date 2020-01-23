@@ -302,6 +302,50 @@ Now Kibana is Setup
 
 <img src="./Images/GoodWork.jpg" width="25%"><br/>
 
+* Launch Streaming application (Apache Beam):
+
+**Carefull** \
+The only way in which the script is python will be connected is running it through the terminal as follow:
+
+* Open a terminal and configure google credentials running the following:
+* Launch spyder typing:
+	```
+	spyder
+	```  
+* Download the six scripts on the following directory:
+
+ /home/edem /Data_project2/Streaming/
+
+
+| Descrition     | Script          |
+| -------- | -------------- |
+| Valenbisi Status | Elastic_valenbisi.py |
+| Traffic Status      | Elastic_estado_trafico.py |
+|Parking locations | Elastic_aparcabicis.py |
+| Bicycle Count     | Elastic_espiras_bicis.py |
+| Cars Count    | Elastic_espiras_Coches.py |
+| Twitter        | Elastic_twitter.py|
+
+
+
+* Launch it and check the console to  see that is running without errors.
+
+**Carefull** \
+Sometime the first time the scripts run, stop for no reason, the second time should run without any problems
+
+* Validate on  Spyder console that you see the messages printed. 
+
+If you want to run the 6 scripts at the same time, you will need to open 6 different consoles, for each script and keep all of the beam running.
+
+<img src="./Images/spyder.png" width="100%"><br/> 
+
+
+Now Apache BEAM is Setup
+
+<img src="./Images/GoodWork.jpg" width="25%"><br/>
+
+
+
 * Launch Apache Nifi:
 	* Launch Nifi application
 	```
@@ -368,6 +412,9 @@ https://www.youtube.com/watch?v=KPHC2ygBak4
 
 The second and the third processor are used to obtain from the json file the need attributes, even though it’s possible to keep the whole file, for this exercise we keep the attributes that were relevant for us.  
 
+The load configuration is set to filter for “ Valencia, patinete”. Those values can be change in any time to search for any keyword.
+
+
 The four and  last  processor is a PublishGCPubSub as the other groups, so the configuration/Properties, you must fill are also the following:
 
 Project ID
@@ -380,18 +427,10 @@ Now NIFI is Setup
 <img src="./Images/GoodWork.jpg" width="25%"><br/>
 
 
-The load configuration is set to filter for “ Valencia, patinete”. Those values can be change in any time to search for any keyword.
 
 
 
-* Go to the Pub/Sub publisher Box, click on properties and configure the project to use your google project id created. 
-	
-    
-    * Finally launch the workflow. 
 
-
-	
-
-* Validate on  Spyder console that you see the messages printed. 
+ * Finally launch the workflow. 
 
 * Go to Kibana dashboard and see that you see it updated on real time. 
