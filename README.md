@@ -353,7 +353,7 @@ and is need it a separate json for each station, the slitJson processor must fol
 
 Now let’s configure the Twitter Group Processor:
 
-<img src="./Images/twitterProc.png" width="75%"><br/>
+![Twitter](Images/TwitterProc.png)
 
 The first processor is the **Get_Twitter**, first need 4 Keys as follow:
 
