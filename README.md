@@ -13,6 +13,8 @@ It received data from only one API of the Ayuntamiento de Valencia Spain, giving
 ![Kibana Dashboard](Images/KibanaDashboard.png)
 
 
+<img src="./Images/Lets-start22.jpg" width="20%"><br/>
+
 
 First, we look for the Ayuntamiento de Valencia APIS:
 
@@ -363,6 +365,19 @@ The first processor is the **Get_Twitter**, first need 4 Keys as follow:
 This video show the process to obtain the mention keys of the first processor 
 
 https://www.youtube.com/watch?v=KPHC2ygBak4
+
+The second and the third processor are used to obtain from the json file the need attributes, even though it’s possible to keep the whole file, for this exercise we keep the attributes that were relevant for us.  
+
+The four and  last  processor is a PublishGCPubSub as the other groups, so the configuration/Properties, you must fill are also the following:
+
+Project ID
+GCP Credentials Provider Service
+Topic Name 
+
+
+Now NIFI is Setup
+
+<img src="./Images/Good_practice.png" width="10%"><br/>
 
 
 The load configuration is set to filter for “ Valencia, patinete”. Those values can be change in any time to search for any keyword.
