@@ -171,7 +171,7 @@ Software/kibana-7.4.2-linux-x86_64/bin/kibana
 
 * Open web browser to validate that kibana has been launched successfully --> http://localhost:5601
 
-Before start sending the data to elasticsearch and the attributes storage as a text and not as the type that we need. For example, the location attribute must be a __Geo-Point__ in order to be able to be use in the program. we need to create the Index in for each one of our data set, 
+Before start sending the data to elasticsearch and the attributes storage as a text and not as the type that we need. For example, the location attribute must be a __Geo-shape__ in order to be able to be use in the program. we need to create the Index in for each one of our data set, 
 
 In this exercise will be 6 data sets, as follow:
 
@@ -201,15 +201,23 @@ For the estado_trafico index:
 ```
 PUT estado_trafico
 {
-  "mappings": {
-    "properties": {
-      "location": {
-        "type": "geo_point"
-      },"estado": {
-        "type": "long"
-      }
+    "mappings": {
+        "properties": {
+            "location": {
+                "type": "geo_shape"
+            },"estado": {
+              "type": "long"
+            }
+        }
     }
-  }
+}
+
+PUT estado_trafico/_doc/deu
+{
+    "location": {
+        "type": "linestring",
+        "coordinates" : [[13.0, 53.0], [14.0, 52.0]]
+    }
 }
 ```
 For the locations of bicycles index:
@@ -455,7 +463,7 @@ Check in python, now json should be printing in the console, as follow:
 
 finally check the the dashboard Estado Trafico in kibana 
 
-![NEW](Images/playkibana.png)
+![NEW](Images/PlayKibana.png)
 
 check the other pre load dashboards.
 
