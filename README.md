@@ -463,7 +463,7 @@ Check in python, now json should be printing in the console, as follow:
 
 finally check the the dashboard Estado Trafico in kibana 
 
-![NEW](Images/PlayKibana.png)
+![kibana](Images/playkibana.png)
 
 check the other pre load dashboards.
 
